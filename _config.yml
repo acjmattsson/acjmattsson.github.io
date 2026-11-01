@@ -1,7 +1,15 @@
 title: acjmattsson
-description: Integritetspolicyer, support och information om mina appar.
-lang: sv
+description: Support and privacy policies for my iPhone apps.
+lang: en
 theme: jekyll-theme-primer
+
+# Default language is English (ADR-0003). Apps in another language
+# set it here for their path.
+defaults:
+  - scope:
+      path: texttv-touch
+    values:
+      lang: sv
 
 exclude:
   - README.md
