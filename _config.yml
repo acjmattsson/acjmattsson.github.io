@@ -1,0 +1,10 @@
+title: acjmattsson
+description: Integritetspolicyer, support och information om mina appar.
+lang: sv
+theme: jekyll-theme-primer
+
+exclude:
+  - README.md
+  - CLAUDE.md
+  - docs/
+  - intent/
