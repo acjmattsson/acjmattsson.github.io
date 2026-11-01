@@ -20,7 +20,7 @@ ADR-0001 gjorde svenska till grundspråk. Men alla appar riktar sig inte bara ti
 | App | Språk |
 |---|---|
 | TextTV Touch | Svenska (enbart) |
-| Boxsplosion | Engelska |
+| Boxsplosion | Engelska (enbart) |
 
 ## Konsekvenser
 
