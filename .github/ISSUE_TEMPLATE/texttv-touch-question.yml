@@ -1,0 +1,27 @@
+name: "TextTV Touch: fråga eller idé"
+description: Ställ en fråga eller föreslå något nytt i TextTV Touch.
+title: "[TextTV Touch] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tack för att du hör av dig! 💛
+
+        **Det här ärendet är publikt och syns för alla.** Skriv inga personuppgifter,
+        till exempel namn, e-postadress eller telefonnummer, och dela inga skärmdumpar
+        som visar sådant. Vill du dela något personligt, mejla i stället
+        (adressen finns på [supportsidan](https://acjmattsson.github.io/texttv-touch/support/)).
+  - type: textarea
+    id: question
+    attributes:
+      label: Din fråga eller idé
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Integritet
+      options:
+        - label: Jag har inte skrivit några personuppgifter i det här ärendet.
+          required: true
