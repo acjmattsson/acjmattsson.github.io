@@ -4,7 +4,7 @@ Public documentation (GitHub Pages, Jekyll) for acjmattsson's apps on the App St
 
 ## Rules
 
-1. One folder per app with a stable slug: `<app>/index.md`, `<app>/privacy/index.md`, `<app>/support/index.md`.
+1. One folder per app with a stable slug: `<app>/index.md`, `<app>/privacy/index.md`, `<app>/support/index.md`. Adding an app: follow [docs/new-app-checklist.md](docs/new-app-checklist.md).
 2. **URLs never change.** They are entered in App Store Connect.
 3. A policy describes only what the app actually does. Review the app's code (network, storage, SDKs) before a policy is written or changed, and update the basis in `docs/<app>/privacy-basis.md` in the same PR.
 4. Every policy has a "last updated" date and a link to its change history. The date is updated on every content change.
