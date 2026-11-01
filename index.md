@@ -1,23 +1,23 @@
 ---
-title: Appar
+title: Apps
 ---
 
-# Appar
+# Apps
 
-Här finns integritetspolicyer, support och information om mina appar.
+Support, privacy policies and information about my iPhone apps.
 
 ## [TextTV Touch](texttv-touch/)
 
-Ett modernt sätt att läsa SVT Text på iPhone.
+A modern way to read SVT Text on iPhone. *In Swedish only.*
 
-- [Integritetspolicy](texttv-touch/privacy/)
+- [Integritetspolicy (privacy policy)](texttv-touch/privacy/)
 - [Support](texttv-touch/support/)
 
 ## [Boxsplosion](boxsplosion/)
 
-Kommer snart.
+Coming soon.
 
 ---
 
-All text här är versionshanterad och publik. Du kan följa varje ändring i
-[repots historik på GitHub](https://github.com/acjmattsson/acjmattsson.github.io/commits/main).
+Everything here is version-controlled and public. You can follow every change
+in the [repository history on GitHub](https://github.com/acjmattsson/acjmattsson.github.io/commits/main).

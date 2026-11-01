@@ -4,6 +4,7 @@ title: Boxsplosion
 
 # Boxsplosion
 
-Kommer snart. Integritetspolicy och support publiceras här innan appen släpps.
+Coming soon. The privacy policy and support page will be published here before
+the app is released.
 
-[← Alla appar](../)
+[← All apps](../)
