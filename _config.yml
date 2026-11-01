@@ -7,4 +7,3 @@ exclude:
   - README.md
   - CLAUDE.md
   - docs/
-  - intent/
