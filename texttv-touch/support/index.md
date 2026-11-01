@@ -6,8 +6,17 @@ title: Support – TextTV Touch
 
 ## Kontakta mig
 
-Hittat en bugg, har en fråga eller en idé?
-[Skapa ett ärende på GitHub](https://github.com/acjmattsson/acjmattsson.github.io/issues/new?title=TextTV%20Touch%3A%20).
+Hittat en bugg, har en fråga eller en idé? Välj det som passar dig:
+
+- **E-post (privat):**
+  [acjmattsson+texttv@gmail.com](mailto:acjmattsson+texttv@gmail.com?subject=TextTV%20Touch)
+- **GitHub (publikt):**
+  [skapa ett ärende](https://github.com/acjmattsson/acjmattsson.github.io/issues/new/choose).
+  Du behöver ett GitHub-konto.
+
+**Tänk på att GitHub-ärenden syns för alla.** Skriv inga personuppgifter där,
+till exempel namn, e-postadress eller telefonnummer, och dela inga skärmdumpar
+som visar sådant. Vill du dela något personligt, mejla i stället.
 
 Berätta gärna vilken iPhone och iOS-version du har, vilken version av appen du
 använder och vilket sidnummer det gäller.

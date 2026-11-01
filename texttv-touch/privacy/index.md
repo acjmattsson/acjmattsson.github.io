@@ -45,9 +45,31 @@ SVT ansvarar för hur de hanterar de uppgifterna. Läs mer i
 - Spårar dig inte mellan appar eller webbplatser.
 - Kräver inget konto.
 
-## Ta bort dina uppgifter
+## När du kontaktar mig
 
-Eftersom allt ligger på din enhet tar du bort det genom att radera appen.
+Appen skickar ingenting till mig. Men om du själv hör av dig får jag de
+uppgifter du skickar.
+
+- **E-post:** jag får din e-postadress och det du skriver. Jag använder det bara
+  för att svara dig och lösa ditt ärende. Mejlet raderas när ärendet är avslutat,
+  senast efter 12 månader. Min e-post hanteras av Google (Gmail).
+- **GitHub-ärenden:** allt du skriver i ett ärende är **publikt** och syns för
+  alla. GitHub hanterar uppgifterna enligt
+  [GitHubs integritetspolicy](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).
+  Skriv därför inga personuppgifter i ett ärende.
+
+Den rättsliga grunden är mitt berättigade intresse av att kunna svara på frågor
+om appen.
+
+## Dina rättigheter
+
+Du har rätt att få veta vilka uppgifter jag har om dig, att få dem rättade och
+att få dem raderade. Mejla mig, så hjälper jag dig. Du kan också klaga hos
+[Integritetsskyddsmyndigheten (IMY)](https://www.imy.se/).
+
+## Ta bort dina uppgifter i appen
+
+Allt appen sparar ligger på din enhet. Du tar bort det genom att radera appen.
 
 ## Barn
 
@@ -59,9 +81,9 @@ Om appen ändras så att den hanterar data på ett nytt sätt uppdateras policyn
 innan den nya versionen släpps. Alla ändringar är publika och går att följa i
 [ändringshistoriken](https://github.com/acjmattsson/acjmattsson.github.io/commits/main/texttv-touch/privacy/index.md).
 
-## Kontakt
+## Personuppgiftsansvarig
 
-Personuppgiftsansvarig: acjmattsson.
-Frågor om integritet ställer du via [supportsidan](../support/).
+Alexander Mattsson<br>
+[acjmattsson+texttv@gmail.com](mailto:acjmattsson+texttv@gmail.com)
 
 [← TextTV Touch](../)

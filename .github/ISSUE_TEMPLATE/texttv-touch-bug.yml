@@ -1,0 +1,51 @@
+name: "TextTV Touch: något fungerar inte"
+description: Rapportera en bugg i TextTV Touch.
+title: "[TextTV Touch] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tack för att du hör av dig! 💛
+
+        **Det här ärendet är publikt och syns för alla.** Skriv inga personuppgifter,
+        till exempel namn, e-postadress eller telefonnummer, och dela inga skärmdumpar
+        som visar sådant. Vill du dela något personligt, mejla i stället
+        (adressen finns på [supportsidan](https://acjmattsson.github.io/texttv-touch/support/)).
+  - type: textarea
+    id: what
+    attributes:
+      label: Vad hände?
+      description: Beskriv vad du gjorde, vad du förväntade dig och vad som hände i stället.
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Sidnummer
+      description: Vilken sida gäller det, om någon?
+      placeholder: "t.ex. 377"
+  - type: input
+    id: device
+    attributes:
+      label: iPhone-modell
+      placeholder: "t.ex. iPhone 13 Pro"
+  - type: input
+    id: ios
+    attributes:
+      label: iOS-version
+      description: Finns under Inställningar → Allmänt → Om.
+      placeholder: "t.ex. 27.2"
+  - type: input
+    id: app-version
+    attributes:
+      label: Appversion
+      description: Finns i App Store på appens sida, under Versionshistorik.
+      placeholder: "t.ex. 1.0.0"
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Integritet
+      options:
+        - label: Jag har inte skrivit några personuppgifter i det här ärendet.
+          required: true
