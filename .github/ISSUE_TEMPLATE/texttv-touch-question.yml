@@ -10,7 +10,7 @@ body:
 
         **Det här ärendet är publikt och syns för alla.** Skriv inga personuppgifter,
         till exempel namn, e-postadress eller telefonnummer, och dela inga skärmdumpar
-        som visar sådant. Vill du dela något personligt, mejla i stället
+        som visar sådant. Vill du hellre skriva privat, mejla mig
         (adressen finns på [supportsidan](https://acjmattsson.github.io/texttv-touch/support/)).
   - type: textarea
     id: question

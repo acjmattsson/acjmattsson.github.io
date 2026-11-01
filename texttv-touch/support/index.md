@@ -16,9 +16,9 @@ Hittat en bugg, har en fråga eller en idé? Välj det som passar dig:
 
 **Tänk på att GitHub-ärenden syns för alla.** Skriv inga personuppgifter där,
 till exempel namn, e-postadress eller telefonnummer, och dela inga skärmdumpar
-som visar sådant. Vill du dela något personligt, mejla i stället.
+som visar sådant.
 
-Berätta gärna vilken iPhone och iOS-version du har, vilken version av appen du
+Berätta gärna vilken enhet och OS-version du har, vilken version av appen du
 använder och vilket sidnummer det gäller.
 
 ## Vanliga frågor
