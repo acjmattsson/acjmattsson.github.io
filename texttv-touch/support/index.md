@@ -16,9 +16,9 @@ Hittat en bugg, har en fråga eller en idé? Välj det som passar dig:
 
 **Tänk på att GitHub-ärenden syns för alla.** Skriv inga personuppgifter där,
 till exempel namn, e-postadress eller telefonnummer, och dela inga skärmdumpar
-som visar sådant. Vill du dela något personligt, mejla i stället.
+som visar sådant.
 
-Berätta gärna vilken iPhone och iOS-version du har, vilken version av appen du
+Berätta gärna vilken enhet och OS-version du har, vilken version av appen du
 använder och vilket sidnummer det gäller.
 
 ## Vanliga frågor
@@ -38,10 +38,11 @@ inte visa nya sidor.
 
 Lägg till sidnummer under Inställningar. Favoriterna sparas bara på din enhet.
 
-### Har appen något med SVT att göra?
+### Är TextTV Touch en app från SVT?
 
-Nej. TextTV Touch är en fristående app. Innehållet hämtas från SVT Text och
-tillhör SVT.
+Nej. TextTV Touch är en fristående app utan koppling till Sveriges Television
+(SVT). Sidorna hämtas från SVT Text, och allt innehåll tillhör SVT. Hittar du ett
+fel i innehållet, till exempel i en nyhet, är det SVT som kan rätta det.
 
 ## Integritet
 
