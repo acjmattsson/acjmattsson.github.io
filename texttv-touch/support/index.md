@@ -38,10 +38,11 @@ inte visa nya sidor.
 
 Lägg till sidnummer under Inställningar. Favoriterna sparas bara på din enhet.
 
-### Har appen något med SVT att göra?
+### Är TextTV Touch en app från SVT?
 
-Nej. TextTV Touch är en fristående app. Innehållet hämtas från SVT Text och
-tillhör SVT.
+Nej. TextTV Touch är en fristående app utan koppling till Sveriges Television
+(SVT). Sidorna hämtas från SVT Text, och allt innehåll tillhör SVT. Hittar du ett
+fel i innehållet, till exempel i en nyhet, är det SVT som kan rätta det.
 
 ## Integritet
 
