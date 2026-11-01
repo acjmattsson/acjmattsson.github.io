@@ -1,41 +1,43 @@
-# Underlag för integritetspolicyn – TextTV Touch
+# Privacy policy basis – TextTV Touch
 
-Det här är underlaget för varje påstående i [integritetspolicyn](../../texttv-touch/privacy/index.md). Uppdatera underlaget i samma PR som policyn, och granska appens kod igen innan du gör det.
+This document is the basis for every claim in the [privacy policy](../../texttv-touch/privacy/index.md). Update it in the same PR as the policy, and review the app's code again before doing so.
 
-**Senast granskat:** 2026-11-01, `acjmattsson/texttv-touch` (`main`).
+The policy itself is in Swedish, because the app is Swedish only ([ADR-0003](../adr/0003-english-as-default-language.md)).
 
-## URL:er i App Store Connect
+**Last reviewed:** 2026-11-01, `acjmattsson/texttv-touch` (`main`).
 
-| Apple-fält | URL |
+## URLs in App Store Connect
+
+| Apple field | URL |
 |---|---|
 | Privacy Policy URL | `https://acjmattsson.github.io/texttv-touch/privacy/` |
 | Support URL | `https://acjmattsson.github.io/texttv-touch/support/` |
-| Marketing URL (valfri) | `https://acjmattsson.github.io/texttv-touch/` |
+| Marketing URL (optional) | `https://acjmattsson.github.io/texttv-touch/` |
 
-## Vad appen gör
+## What the app does
 
-| Område | Fakta | Källa i appen |
+| Area | Facts | Source in the app |
 |---|---|---|
-| Nätverk | Enda anropet: `GET https://www.svt.se/text-tv/api/{sidnummer}`. Inga egna headers. | `src/services/svtTextApi.ts` |
-| Lokal lagring | `AppSettings` (`inputPosition`, `theme`, `favorites`) i AsyncStorage, nyckel `texttv_settings`. | `src/store/settingsContext.tsx` |
-| Cache | Sidor i minnet (`Map`), max 10 min, försvinner när appen stängs. | `src/store/pageCache.ts` |
-| WebView | Lokalt byggd HTML (`baseUrl: ''`), laddar inga externa resurser. | `src/components/PageCardWebKit.tsx` |
-| Tredjepart | Inga SDK:er för analys, annonser, kraschrapporter, konton eller push. | `package.json` |
+| Network | Only request: `GET https://www.svt.se/text-tv/api/{page number}`. No custom headers. | `src/services/svtTextApi.ts` |
+| Local storage | `AppSettings` (`inputPosition`, `theme`, `favorites`) in AsyncStorage, key `texttv_settings`. | `src/store/settingsContext.tsx` |
+| Cache | Pages in memory (`Map`), max 10 min, gone when the app closes. | `src/store/pageCache.ts` |
+| WebView | Locally built HTML (`baseUrl: ''`), loads no external resources. | `src/components/PageCardWebKit.tsx` |
+| Third parties | No SDKs for analytics, ads, crash reporting, accounts or push. | `package.json` |
 
-## Support och personuppgiftsansvar
+## Support and data controller
 
 | | |
 |---|---|
-| Personuppgiftsansvarig | Alexander Mattsson (privatperson) |
-| E-post | `acjmattsson+texttv@gmail.com` (Gmail plus-alias, filtreras per app) |
-| Publik kanal | GitHub-ärenden via mallarna i `.github/ISSUE_TEMPLATE/` |
-| Rättslig grund för support-e-post | Berättigat intresse (GDPR art. 6.1 f): att kunna svara |
-| Lagring av mejl | Tills ärendet är avslutat, senast 12 månader |
+| Data controller | Alexander Mattsson (private individual) |
+| Email | `acjmattsson+texttv@gmail.com` (Gmail plus alias, filtered per app) |
+| Public channel | GitHub issues through the forms in `.github/ISSUE_TEMPLATE/` |
+| Legal basis for support email | Legitimate interest (GDPR Art. 6(1)(f)): being able to reply |
+| Email retention | Until the matter is closed, at most 12 months |
 
-## App Privacy i App Store Connect
+## App Privacy in App Store Connect
 
-**Data Not Collected.** Appen samlar inte in data. Anropen till SVT är nödvändiga för funktionen och beskrivs i policyn. Support via e-post eller GitHub sker utanför appen och omfattas inte av märkningen.
+**Data Not Collected.** The app collects no data. The requests to SVT are necessary for the app to work and are described in the policy. Support by email or on GitHub happens outside the app and is not covered by the label.
 
-## Granska igen när
+## Review again when
 
-appen får analys, kraschrapportering, konton, push-notiser, nya nätverksanrop eller ny lokal lagring, eller när en Expo-tjänst som kan samla in data slås på (se ADR-0005 i `acjmattsson/texttv-touch`).
+the app gets analytics, crash reporting, accounts, push notifications, new network requests or new local storage, or when an Expo service that can collect data is turned on (see ADR-0005 in `acjmattsson/texttv-touch`).

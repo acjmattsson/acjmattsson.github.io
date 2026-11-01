@@ -14,4 +14,4 @@ visible in its history.
 | TextTV Touch | Swedish | [privacy](https://acjmattsson.github.io/texttv-touch/privacy/) | [support](https://acjmattsson.github.io/texttv-touch/support/) |
 | Boxsplosion | English | Coming soon | Coming soon |
 
-Structure and conventions (in Swedish): [docs/adr/](docs/adr/).
+Structure and conventions: [docs/adr/](docs/adr/).

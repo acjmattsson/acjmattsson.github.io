@@ -1,42 +1,43 @@
-# ADR-0001: Ett publikt dokumentationsrepo för alla appar
+# ADR-0001: One public documentation repository for all apps
 
-- **Status:** Accepterad
-- **Datum:** 2026-11-01
-- **Beslutsfattare:** acjmattsson (produktägare)
+- **Status:** Accepted. Point 7 is superseded by [ADR-0003](0003-english-as-default-language.md); point 8 is amended by [ADR-0002](0002-lightweight-process-for-docs-repo.md).
+- **Date:** 2026-11-01
+- **Decision maker:** acjmattsson (product owner)
+- **Translated** from Swedish to English on 2026-11-01 per ADR-0003. The decision is unchanged.
 
-## Kontext
+## Context
 
-Apple kräver att varje app i App Store länkar till en **integritetspolicy** (Privacy Policy URL) och en **supportsida** (Support URL). En marknadsförings-URL är valfri. Fler appar är på väg (TextTV Touch, Boxsplosion), och alla behöver samma sorts sidor.
+Apple requires every app on the App Store to link to a **privacy policy** (Privacy Policy URL) and a **support page** (Support URL). A marketing URL is optional. More apps are on the way (TextTV Touch, Boxsplosion), and they all need the same kinds of pages.
 
-Apparnas kod ligger i privata repon. GitHub Pages från privata repon kräver betald plan, och koden ska inte bli publik bara för att policyn ska kunna publiceras.
+The apps' source code lives in private repositories. GitHub Pages from a private repository requires a paid plan, and the code should not become public just so that the policy can be published.
 
-## Beslut
+## Decision
 
-1. **Ett publikt repo, `acjmattsson/acjmattsson.github.io`**, för all publik dokumentation om alla appar. Det publiceras som GitHub-användarsida på `https://acjmattsson.github.io/`.
-2. **En mapp per app** med stabil slug (gemener, bindestreck): `texttv-touch/`, `boxsplosion/`.
-3. **Fast struktur per app:**
+1. **One public repository, `acjmattsson/acjmattsson.github.io`**, for all public documentation about all apps. It is published as the GitHub user site at `https://acjmattsson.github.io/`.
+2. **One folder per app** with a stable slug (lowercase, hyphens): `texttv-touch/`, `boxsplosion/`.
+3. **Fixed structure per app:**
    ```
-   <app>/index.md           # Produktsida (kan användas som marknadsförings-URL)
+   <app>/index.md           # Product page (can be used as the marketing URL)
    <app>/privacy/index.md   # Privacy Policy URL
    <app>/support/index.md   # Support URL
    ```
-   `index.md` i en mapp ger URL:er som slutar på `/privacy/` och lämnar plats för t.ex. `privacy/en/` senare.
-4. **Egen integritetspolicy per app.** Apple granskar policyn mot vad just den appen gör. Hellre lite duplicerad text än en delad policy som blir fel för någon app.
-5. **URL:er ändras aldrig** när de väl angetts i App Store Connect. Flyttas en sida lämnas en omdirigering kvar.
-6. **Transparens via Git.** Repot är publikt med flit: varje ändring av en policy syns i historiken. Varje policy visar "Senast uppdaterad" och länkar till sin egen ändringshistorik.
-7. **Svenska** är grundspråket. Engelska läggs till som `<sida>/en/` om en app säljs utanför Sverige.
-8. Beslut om sajten dokumenteras som ADR i `docs/adr/` i det här repot. `docs/`, `intent/`, `README.md` och `CLAUDE.md` publiceras inte på sajten (`exclude` i `_config.yml`) men är läsbara på GitHub.
+   `index.md` inside a folder gives URLs ending in `/privacy/` and leaves room for, for example, `privacy/en/` later.
+4. **A separate privacy policy per app.** Apple reviews the policy against what that particular app does. A little duplicated text is better than a shared policy that turns out wrong for one of the apps.
+5. **URLs never change** once they have been entered in App Store Connect. If a page moves, a redirect is left behind.
+6. **Transparency through Git.** The repository is public on purpose: every change to a policy is visible in its history. Each policy shows a "last updated" date and links to its own change history.
+7. **Swedish** is the base language. English is added as `<page>/en/` if an app is sold outside Sweden. *(Superseded by ADR-0003.)*
+8. Decisions about the site are recorded as ADRs in `docs/adr/` in this repository. `docs/`, `intent/`, `README.md` and `CLAUDE.md` are not published on the site (`exclude` in `_config.yml`) but can be read on GitHub.
 
-## Konsekvenser
+## Consequences
 
-- **+** En plats att underhålla, ett enhetligt utseende och korta URL:er.
-- **+** Policyändringar är spårbara för vem som helst.
-- **+** Appkoden förblir privat.
-- **−** Användarsidan (`acjmattsson.github.io`) är unik per konto. Roten används nu av app-dokumentationen. En personlig sida får i så fall dela utrymme med den.
-- **−** Byte till egen domän i framtiden kräver nya URL:er i App Store Connect för alla appar (eller omdirigeringar).
+- **+** One place to maintain, a consistent look and short URLs.
+- **+** Policy changes can be traced by anyone.
+- **+** The app code stays private.
+- **−** The user site (`acjmattsson.github.io`) is unique per account. Its root is now used by the app documentation, so a personal site would have to share the space.
+- **−** Moving to a custom domain later requires new URLs in App Store Connect for every app (or redirects).
 
-## Alternativ som valdes bort
+## Alternatives considered
 
-- **Repo per app** (`texttv-touch-site` m.fl.): fler repon att underhålla, längre URL:er, inget gemensamt utseende.
-- **Repo med namnet `apps`**: fungerar, men ger ett extra led i varje URL (`/apps/texttv-touch/…`) utan vinst.
-- **Publicera från apprepona**: kräver att koden blir publik eller betald plan.
+- **One repository per app** (`texttv-touch-site` and so on): more repositories to maintain, longer URLs, no shared look.
+- **A repository named `apps`**: works, but adds a segment to every URL (`/apps/texttv-touch/…`) for no benefit.
+- **Publishing from the app repositories**: requires the code to become public, or a paid plan.
